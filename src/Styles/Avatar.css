@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+  transition: background 0.5s;
+}
+
+.default-theme {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+}
+
+.preview-avatars {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 28px 0 16px 0;
+}
+
+.preview-avatars img {
+  width: 60px;
+  height: 60px;
+  border-radius: 17px;
+  background: #fff;
+  border: 3px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  transition: transform 0.2s;
+}
+.preview-avatars img:hover {
+  transform: scale(1.14) rotate(-7deg);
+}
+
+.title.main-logo {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.25em;
+  font-weight: bold;
+  color: #294373;
+  letter-spacing: 1px;
+  text-shadow: 0 6px 32px #abc3ed66;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  margin: 24px 0 16px 0;
+  font-size: 1.5em;
+  color: #23314b;
+  font-weight: 600;
+}
+
+.big-buttons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.big-buttons button {
+  padding: 20px 40px;
+  font-size: 1.4em;
+  border-radius: 50px;
+  border: none;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255,75,43,0.22);
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.big-buttons button:hover {
+  background-color: #e03e39;
+  box-shadow: 0 6px 20px rgba(255,75,43,0.22);
+}
+
+.boys-theme {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #dbe9ff;
+}
+
+.boys-theme .gender-select button,
+.boys-theme .btns button,
+.boys-theme .generate button {
+  background-color: #203a43;
+  color: #aad8d3;
+  border: 1px solid #aad8d3;
+  box-shadow: none;
+}
+
+.boys-theme .gender-select button.selected,
+.boys-theme .btns button.selected {
+  background-color: #55b6d9;
+  color: #10354e;
+  font-weight: 700;
+  box-shadow: 0 0 12px #55b6d9;
+}
+
+.girls-theme {
+  background: linear-gradient(135deg, #f7971e, #ffd200);
+  color: #451c52;
+}
+
+.girls-theme .gender-select button,
+.girls-theme .btns button,
+.girls-theme .generate button {
+  background-color: #f8c1f7;
+  color: #6a196a;
+  border: 1px solid #6a196a;
+  box-shadow: none;
+}
+
+.girls-theme .gender-select button.selected,
+.girls-theme .btns button.selected {
+  background-color: #d667d6;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 0 12px #d667d6;
+}
+
+.boys-theme .btns button:hover,
+.boys-theme .gender-select button:hover,
+.boys-theme .generate button:hover {
+  background-color: #4361ee;
+  color: white;
+  box-shadow: 0 0 15px #4361ee;
+  cursor: pointer;
+}
+
+.girls-theme .btns button:hover,
+.girls-theme .gender-select button:hover,
+.girls-theme .generate button:hover {
+  background-color: #d667d6;
+  color: white;
+  box-shadow: 0 0 15px #d667d6;
+  cursor: pointer;
+}
+
+.gender-row {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.gender-row button {
+  padding: 15px 30px;
+  font-size: 1.3em;
+  border-radius: 50px;
+  border: 2px solid currentColor;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gender-row button.active {
+  background-color: currentColor;
+  color: #fff;
+  text-shadow: 0 0 12px #fff, 0 0 2px #000;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.gender-row button.boys-active {
+  color: #fff !important;
+  text-shadow: 0 0 10px #66b3ff, 0 0 2px #222, 0 0 1px #fff;
+}
+
+.girls-theme .gender-row button.active {
+  color: #fff;
+  text-shadow: 0 0 8px rgba(0,0,0,0.7);
+}
+
+.category-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 50px;
+  padding: 0 10px;
+}
+
+.card {
+  background: #fff;
+  padding: 12px 15px;
+  min-width: 100px;
+  max-width: 120px;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card:hover, .card.selected {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  text-shadow: 0 0 3px rgba(255,255,255,0.7);
+}
+
+.boys-selected {
+  background: linear-gradient(135deg, #ff6e40, #ff3d00);
+  color: white;
+  box-shadow: 0 10px 20px rgba(255, 94, 54, 0.7);
+}
+
+.girls-selected {
+  background: linear-gradient(135deg, #ff49ba, #a5009e);
+  color: white;
+  box-shadow: 0 10px 20px rgba(229, 24, 224, 0.7);
+}
+
+.avatar-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 5vh;
+  flex-wrap: wrap;
+}
+
+.avatar-display {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.avatar-display img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+#gen,
+#down {
+  padding: 15px 30px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  min-width: 100px;
+  text-align: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#gen {
+  background-color: #4caf50;
+  color: white;
+}
+
+#down {
+  background-color: #f44336;
+  color: white;
+}
+
+#gen:hover,
+#down:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+#gen:disabled,
+#down:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.select-instruction {
+  font-size: 20px;
+  color: #999;
+  user-select: none;
+  font-weight: 600;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.preview-avatars {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 28px 0 16px 0;
+}
+
+.preview-avatars img {
+  width: 60px;
+  height: 60px;
+  border-radius: 17px;
+  background: #fff;
+  border: 3px solid #eee;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.10);
+  transition: transform 0.2s;
+}
+
+.preview-avatars img:hover {
+  transform: scale(1.14) rotate(-7deg);
+}
