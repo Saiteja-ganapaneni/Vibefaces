@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Vibefaces/static/css/main.1ef0a4e9.css",
+    "main.js": "/Vibefaces/static/js/main.3f2e1a82.js",
+    "index.html": "/Vibefaces/index.html",
+    "main.1ef0a4e9.css.map": "/Vibefaces/static/css/main.1ef0a4e9.css.map",
+    "main.3f2e1a82.js.map": "/Vibefaces/static/js/main.3f2e1a82.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ef0a4e9.css",
+    "static/js/main.3f2e1a82.js"
+  ]
+}
